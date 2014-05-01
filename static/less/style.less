@@ -1,14 +1,60 @@
+html, body, div {
+  font-size: 17px;
+  line-height: 19px;
+  color: #6a6a6a;
+}
+
 body {
-  padding-top:20px;
+  padding-top: 20px;
 }
 
 div#wrap {
-  @width: 1180px;
+  @width: 960px;
   width: @width;
   max-width: @width;
   margin: 0 auto;
 }
 
+div.pure-menu a {
+  color: #444444;
+}
+
 ul.menu {
-  float:right;
+  float: right;
+}
+
+a {
+  color: #5881c3;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+div.content {
+  margin-top: 20px;
+  padding: 0 20px;
+
+  .desc {
+    font-size: 14px;
+    line-height: 16px;
+    overflow: hidden;
+
+    p {
+      margin: 5px 0;
+
+      img {
+        float: right;
+      }
+    }
+
+    ul {
+      margin: 20px 0 0 0;
+      padding: 0 0 0 20px;
+      li {
+        margin-bottom: 10px;
+      }
+    }
+  }
 }
