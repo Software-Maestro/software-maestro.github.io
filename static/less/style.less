@@ -36,6 +36,11 @@ a {
   font-size: .7em;
 }
 
+button.active {
+  background: #71b6dd;
+  color: #ffffff;
+}
+
 div.content {
   margin-top: 20px;
   padding: 0 20px;
@@ -148,6 +153,10 @@ div.content {
       div.tags {
         margin: 3px 0 0 0;
         height: @tags-height;
+
+        button:first-letter {
+          text-transform: uppercase;
+        }
       }
     }
   }
