@@ -30,9 +30,10 @@ function filterBy(name, swc) {
 
 function refreshFilter($category) {
   var onFilter = $category.find('button.active');
-  var filterList = '';
+  var filterList = [];
   onFilter.each(function () {
-    filterList += ' .' + $(this).attr('data-category');
+    filterList.push(' .' + $(this).attr('data-category'));
   });
-  return $.trim(filterList);
+
+  return $.trim(filterList.join(','));
 }
